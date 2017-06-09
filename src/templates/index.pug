@@ -24,7 +24,7 @@ html
 		main.wrap
 			.row.center-xs#gitmoji-list
 				each gitmoji in emojis.gitmojis
-					article.emoji.col-xs-12.col-sm-6.col-md-3
+					article.emoji.col-xs-2.col-sm-2.col-md-1
 						.emoji-card
 							header(class=gitmoji.name+' emoji-header')
 								span(data-clipboard-text=gitmoji.emoji).emoji-icon.gitmoji.gitmoji-clip=gitmoji.emoji

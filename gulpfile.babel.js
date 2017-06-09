@@ -76,7 +76,9 @@ gulp.task('test', () => {
 
 gulp.task('serve', ['styles', 'templates'], () => {
 	browserSync.init({
-		server: `${baseDirs.dist}`
+	  server: `${baseDirs.dist}`,
+	  port: 7777,
+          ui: false
 	});
 
 	gulp.watch([routes.templates.pug, routes.templates._pug], ['templates']);
